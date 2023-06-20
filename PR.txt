@@ -1,0 +1,27 @@
+Exercicio 1(todas suas respostas foram feitas dentro da diretoria ./ex1/)
+
+1.1
+
+Apos uma analise do dataset foi alterado manualmente retirando a key "intercencoes" de modo a deixar apenas a lista de seus objetos na base de dados sendo o novo JSON disponibilizado no ficheiro db.json.
+
+De seguinda foi importada a base de dados usando o comando:
+mongoimport -d estetica -c consultas --file dataset_operacoes_estetica.json --jsonArray
+
+
+Já para a execução das queries foi necessario fazer
+mongosh
+use estetica
+
+Finalmente para verificar se a importação correu bem fez-se a seguinte querie: 
+db.estetica.find() 
+
+1.2
+Sua resolução se aprensenta no ficheiro queries.txt
+
+1.3
+Para executar este exercicio deve estar na pasta do exercicio ("cd ./ex1/") fazer "npm i", seguido de "npm start".
+
+
+Exercício 2
+
+Para este exercicio deve entrar num terminal separado do da API mantedo a anterior a correr. Para isto deve estar na pasta do exercicio ("cd ./ex2/") fazer "npm i", seguido de "npm start"
